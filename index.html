@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stan Art Works | Portfolio</title>
+    <meta name="description" content="Portfolio of Noah Stanarevic — motion design, digital illustration, and visual art.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <!-- ── Navbar ─────────────────────────── -->
+    <nav class="navbar">
+        <div class="logo">STAN ART WORKS</div>
+        <div class="nav-links">
+            <a href="https://www.instagram.com/stan_art_works/" target="_blank" rel="noopener">Instagram</a>
+            <a href="mailto:noah.stan22@gmail.com">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ── Hero ──────────────────────────── -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <div class="line"><span class="word">Digital</span></div>
+                <div class="line"><span class="word">Craftsmanship.</span></div>
+            </h1>
+            <p class="hero-subtitle">Motion, light, and abstract forms — a visual body of work by Noah Stanarevic.</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ── About ─────────────────────────── -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+
+            <!-- Left: bio text -->
+            <div class="about-bio">
+                <span class="about-label">About</span>
+                <h2 class="about-heading">Noah<br>Stanarevic.</h2>
+                <p class="about-text">
+                    16 years old, based in Vienna. Student at <em>Die Graphische</em> —
+                    one of Austria's most respected schools for media and design.
+                    Former footballer turned creative, now channelling that same
+                    competitive drive into 3D renders, motion design, and digital
+                    illustration. Outside the studio: gym, business, and building
+                    something from scratch.
+                </p>
+                <a href="https://www.instagram.com/stan_art_works/" target="_blank" rel="noopener" class="about-cta">
+                    Follow the journey ↗
+                </a>
+            </div>
+
+            <!-- Right: stat cards -->
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-num">16</span>
+                    <span class="stat-label">Years Old</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Ideas per Day</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">VIE</span>
+                    <span class="stat-label">Vienna, Austria</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">11+</span>
+                    <span class="stat-label">Works Published</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scrolling fact ticker -->
+        <div class="ticker-wrap" aria-hidden="true">
+            <div class="ticker-track">
+                <span>Die Graphische Student</span>
+                <span class="ticker-dot">·</span>
+                <span>3D Render</span>
+                <span class="ticker-dot">·</span>
+                <span>Motion Design</span>
+                <span class="ticker-dot">·</span>
+                <span>Vienna, Austria</span>
+                <span class="ticker-dot">·</span>
+                <span>Former Footballer</span>
+                <span class="ticker-dot">·</span>
+                <span>Gym Every Day</span>
+                <span class="ticker-dot">·</span>
+                <span>Digital Illustration</span>
+                <span class="ticker-dot">·</span>
+                <span>After Effects</span>
+                <span class="ticker-dot">·</span>
+                <span>Blender</span>
+                <span class="ticker-dot">·</span>
+                <span>Business Mindset</span>
+                <span class="ticker-dot">·</span>
+                <!-- duplicate for seamless loop -->
+                <span>Die Graphische Student</span>
+                <span class="ticker-dot">·</span>
+                <span>3D Render</span>
+                <span class="ticker-dot">·</span>
+                <span>Motion Design</span>
+                <span class="ticker-dot">·</span>
+                <span>Vienna, Austria</span>
+                <span class="ticker-dot">·</span>
+                <span>Former Footballer</span>
+                <span class="ticker-dot">·</span>
+                <span>Gym Every Day</span>
+                <span class="ticker-dot">·</span>
+                <span>Digital Illustration</span>
+                <span class="ticker-dot">·</span>
+                <span>After Effects</span>
+                <span class="ticker-dot">·</span>
+                <span>Blender</span>
+                <span class="ticker-dot">·</span>
+                <span>Business Mindset</span>
+                <span class="ticker-dot">·</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Works ─────────────────────────── -->
+    <section class="works-section">
+        <!--
+            Bento layout — 3-col grid, no gaps:
+            Row 1: [Maresh: 2col] [Pulse: 1col]         = 3
+            Row 2: [Stadtgefühl] [Signal] [Fracture]     = 3
+            Row 3: [Dissolution: 1col] [Ink Study: 2col] = 3
+            Row 4: [Monolith: 2col] [Threshold: 1col]    = 3
+            Row 5: [Eclipse: 1col] [Veil: 2col]          = 3
+                                               Total = 11 ✓
+        -->
+        <div class="grid" id="gallery-grid">
+
+            <!-- 1 · span-2 wide -->
+            <div class="grid-item span-2"
+                 data-title="Maresh"
+                 data-type="Character Animation"
+                 data-desc="From vector paths to keyframes. Finally got around to animating this character I built in Illustrator. Rigged and rendered entirely in After Effects. Can you guess what he is saying ??? #MotionDesign #AfterEffects #Illustrator #CharacterAnimation #2DAnimation">
+                <div class="grid-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/Charakter_Maresh_ig.MP4" type="video/mp4">
+                    </video>
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Character Animation</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 · span-1 -->
+            <div class="grid-item"
+                 data-title="Breakfast Sequence"
+                 data-type="Motion Design"
+                 data-desc="Simple shapes, complex motion. Playing with transitions and keyframes for this fun breakfast sequence in After Effects. #AeAnimation #AfterEffectsAnimation #MotionDesign #DigitalArtist #AnimationProcess">
+                <div class="grid-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/Noah_Stanarevic_Mep_Animation 2.MP4" type="video/mp4">
+                    </video>
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Motion Design</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 · span-1 -->
+            <div class="grid-item"
+                 data-title="Smart City"
+                 data-type="Motion Design"
+                 data-desc="A vibrant isometric animation of a sustainable smart city, featuring solar-powered buildings and green transit. Brought to life with dynamic motion graphics. #AfterEffects #SmartCity #Isometric #Animation #graphicdesign">
+                <div class="grid-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/Stadt_Noah-Stanarevic.ae Kopie.MP4" type="video/mp4">
+                    </video>
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Motion Design</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 · span-1 -->
+            <div class="grid-item"
+                 data-title="Icon Study"
+                 data-type="Icon Animation"
+                 data-desc="Exploring shape, rhythm and timing through a minimal icon animation system. Each symbol enters and exits with precision — a cohesive visual language in motion. #MotionDesign #AfterEffects #IconAnimation #DigitalArt">
+                <div class="grid-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/Stanarevic_noah_Icons Kopie 2.MP4" type="video/mp4">
+                    </video>
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Icon Animation</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 · span-1 -->
+            <div class="grid-item"
+                 data-title="The Kitchen"
+                 data-type="3D Isometric Render"
+                 data-desc="My latest isometric 3D study. Focused on warm, directional lighting and creating a functional yet stylized layout. #3DArt #Isometric #Render #DigitalArt #interiørdesign">
+                <div class="grid-media">
+                    <img src="img/IMG_0861.PNG" alt="Fracture" loading="lazy">
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Digital Illustration</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 · span-1 -->
+            <div class="grid-item"
+                 data-title="Movie Night"
+                 data-type="3D Isometric Render"
+                 data-desc="Late night movie vibes in 3D. Just finished this cozy isometric cinema setup. #3DArt #Isometric #Cinema #CozyVibes #Netflix">
+                <div class="grid-media">
+                    <img src="img/IMG_0862.PNG" alt="Dissolution" loading="lazy">
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Digital Illustration</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 · span-2 wide -->
+            <div class="grid-item span-2"
+                 data-title="Pencil"
+                 data-type="Vector Illustration"
+                 data-desc="A clean, minimalist study in Illustrator. #adobeillustrator #vectorart #minimalism #graphicdesign #digitalillustration">
+                <div class="grid-media">
+                    <img src="img/Stift_stanarevic_noah.JPG" alt="Ink Study No. 1" loading="lazy">
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Pen & Ink</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 · span-2 wide -->
+            <div class="grid-item span-2"
+                 data-title="Portrait No. 1"
+                 data-type="Digital Portrait"
+                 data-desc="Decided it was time for a fresh portrait. Get ready for a lot of new content soon! #ArtistOnInstagram #NewLook #DigitalArt #ArtJourney #moretocome">
+                <div class="grid-media">
+                    <img src="img/2A3B9FE3-E251-4B96-AD8E-45D4C7C89AA0.JPG" alt="Monolith" loading="lazy">
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Digital Art</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 · span-1 -->
+            <div class="grid-item"
+                 data-title="The Storage"
+                 data-type="3D Isometric Render"
+                 data-desc="A detailed look at a high-stakes storage and grow room in 3D. The contrast of light and shadow tells the whole story. #DigitalArt #CGI #3DScene #IsometricVibes #MovieScene">
+                <div class="grid-media">
+                    <img src="img/IMG_0859.JPG" alt="Threshold" loading="lazy">
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Photography</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 · span-1 -->
+            <div class="grid-item"
+                 data-title="Still Life"
+                 data-type="Digital Painting"
+                 data-desc="First time trying my hand at a digital still life. Still learning how to paint light and shadows. #DigitalStillLife #ArtNewbie #LearningToPaint #AvocadoArt #ArtStudy">
+                <div class="grid-media">
+                    <img src="img/C15629D0-82D5-4AC6-A424-30569D55207B.JPG" alt="Eclipse" loading="lazy">
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Photography</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 · span-2 wide -->
+            <div class="grid-item span-2"
+                 data-title="Character Study"
+                 data-type="Digital Illustration"
+                 data-desc="Exploring a new style with this character illustration. Trying out different brushwork and light. #CharacterDesign #DigitalArt #Illustration #Visuals #digitalcreator">
+                <div class="grid-media">
+                    <img src="img/FE013EC5-EB76-46A3-AC57-22458D694256.JPG" alt="Veil" loading="lazy">
+                    <div class="grid-overlay">
+                        <span class="grid-type-tag">Photography</span>
+                        <span class="grid-open-icon">↗</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Lightbox ───────────────────────── -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" id="lb-backdrop"></div>
+        <div class="lightbox-panel">
+            <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+            <div class="lb-media" id="lb-media"></div>
+            <div class="lb-info">
+                <span class="lb-type" id="lb-type"></span>
+                <h2 class="lb-title" id="lb-title"></h2>
+                <p class="lb-desc" id="lb-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Footer ─────────────────────────── -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <p class="footer-logo">STAN ART WORKS</p>
+                <p class="footer-tagline">Motion, light, and form.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/stan_art_works/" target="_blank" rel="noopener" class="footer-link insta-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                    @stan_art_works
+                </a>
+                <a href="mailto:noah.stan22@gmail.com" class="footer-link">noah.stan22@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Noah Stanarevic — Stan Art Works. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
